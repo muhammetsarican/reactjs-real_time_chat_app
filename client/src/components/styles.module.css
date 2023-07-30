@@ -2,8 +2,13 @@
     background: gray;
     height: 200px;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
 }
 .chatBubble{
+    align-self: flex-start;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -16,6 +21,10 @@
     border-radius: 1rem 1rem 1rem 0;
     outline: 0.1px solid whitesmoke;
     outline-offset: 0.2rem;
+}
+.right{
+    align-self: flex-end;
+    background: lightgreen;
 }
 .messageInput{
     border: none;

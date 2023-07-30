@@ -1,9 +1,10 @@
 const shortid = require("shortid");
 const _ = require("lodash");
-const redisClient = require("../clients/redis");
+// const redisClient = require("../clients/redis");
+const redis=require( "redis");
 
 function Messages() {
-	this.client = redisClient.getClient();
+	this.client = redis.createClient();
 }
 
 module.exports = new Messages();
